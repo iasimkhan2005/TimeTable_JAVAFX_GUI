@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.assignment_4_gui.AdminMenuController">
+   <children>
+      <ImageView fitHeight="442.0" fitWidth="636.0" layoutX="-8.0">
+         <image>
+            <Image url="@bg.jpeg" />
+         </image>
+      </ImageView>
+      <VBox prefHeight="428.0" prefWidth="137.0" spacing="30.0" AnchorPane.leftAnchor="10.0">
+         <children>
+            <Button fx:id="AddTeacher_btn" mnemonicParsing="false" onAction="#handleAddTeacher_btn" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: LightBlue; -fx-border-color: blue;" text="Add Teacher" />
+            <Button fx:id="AddStudent_btn" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#handleAddStudent_btn" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: LightBlue; -fx-border-color: blue;" text="Add Student" />
+            <Button fx:id="AddCourse_btn" layoutX="10.0" layoutY="35.0" mnemonicParsing="false" onAction="#handleAddCourse_btn" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: LightBlue; -fx-border-color: blue;" text="Add Course" />
+            <Button fx:id="EnrollStudent_btn" layoutX="10.0" layoutY="60.0" mnemonicParsing="false" onAction="#handleEnrollStudent_btn" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: LightBlue; -fx-border-color: blue;" text="Enroll Student" />
+            <Button fx:id="AssignCourse_btn" layoutX="10.0" layoutY="85.0" mnemonicParsing="false" onAction="#handleAssignCourse_btn" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: LightBlue; -fx-border-color: blue;" text="Assign Course" />
+            <Button fx:id="ViewTimeTable_btn" layoutX="10.0" layoutY="110.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: LightBlue; -fx-border-color: blue;" text="View Time Table" />
+         </children>
+         <padding>
+            <Insets left="10.0" top="40.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>
